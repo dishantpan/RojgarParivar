@@ -1,0 +1,61 @@
+.al-root {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: 24px; position: relative; overflow: hidden;
+}
+.al-bg { position: fixed; inset: 0; pointer-events: none; }
+.al-blob {
+  position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.08;
+}
+.al-b1 { width:600px;height:600px;background:#FF6B00;top:-200px;right:-100px;animation:fadeIn 2s ease; }
+.al-b2 { width:400px;height:400px;background:#3B82F6;bottom:-100px;left:-100px;animation:fadeIn 2s ease 0.5s both; }
+.al-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.al-box {
+  background: var(--bg2); border-radius: 24px;
+  border: 1px solid var(--border2); padding: 44px 40px;
+  width: 100%; max-width: 420px; position: relative; z-index: 1;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+}
+.al-logo {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 32px;
+}
+.al-logo-icon {
+  width: 48px; height: 48px; background: var(--orange);
+  border-radius: 14px; display: flex; align-items: center;
+  justify-content: center; font-size: 24px;
+  box-shadow: 0 8px 24px rgba(255,107,0,0.4);
+}
+.al-logo-text { font-family: var(--font-display); font-size: 20px; font-weight: 800; display: block; }
+.al-logo-sub { font-size: 11px; color: var(--text3); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; }
+.al-box h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+.al-box > p { font-size: 14px; color: var(--text2); margin-bottom: 28px; }
+.al-hint {
+  display: flex; gap: 12px; background: var(--bg3);
+  border: 1px solid var(--border2); border-radius: var(--r);
+  padding: 14px; margin-bottom: 24px; font-size: 12px;
+  color: var(--text2); line-height: 1.6;
+}
+.al-hint strong { color: var(--text); }
+.al-error {
+  background: var(--red-pale); border: 1px solid rgba(239,68,68,0.3);
+  color: var(--red); border-radius: var(--r-sm);
+  padding: 12px 14px; font-size: 13px; margin-bottom: 16px;
+}
+.al-btn {
+  width: 100%; background: var(--orange); color: white;
+  padding: 14px; border-radius: var(--r); font-size: 16px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all 0.2s; margin-top: 8px;
+  box-shadow: 0 8px 24px rgba(255,107,0,0.3);
+}
+.al-btn:hover:not(:disabled) { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,107,0,0.4); }
+.al-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.al-spinner {
+  width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block;
+}
+.al-footer { text-align: center; font-size: 11px; color: var(--text3); margin-top: 24px; }
