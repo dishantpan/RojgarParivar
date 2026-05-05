@@ -1,0 +1,23 @@
+# Node modules (never push these)
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Environment files (NEVER push .env)
+.env
+*/.env
+**/.env
+
+# Build folders
+dist/
+build/
+*/dist/
+*/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
