@@ -31,3 +31,14 @@ in Hindi to ensure accessibility for users with limited English proficiency.
 - **Admin Panel:** React.js
 
 ## 📁 Project Structure
+
+
+## Intellectual Property Notice
+
+RojgarParivar is an original project developed by the founding team
+for solving employment accessibility problems in India's informal workforce sector.
+
+All source code, architecture, workflows, UI/UX, and branding are
+the intellectual property of the original creators.
+
+© 2025 RojgarParivar Team. All Rights Reserved.
